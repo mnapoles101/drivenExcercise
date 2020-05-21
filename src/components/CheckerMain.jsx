@@ -12,10 +12,8 @@ class CheckBoard extends Component {
     this.myRef = React.createRef();
 
     this.state = {
-      black: null,
-      white: null,
       newNumber: "",
-      subNumber: null,
+      submittedNumber: null,
     };
   }
 
@@ -130,7 +128,7 @@ class CheckBoard extends Component {
                           ? "form-control input-txt-bx"
                           : "form-control input-txt-bx"
                       }
-                      value={values.subNumber}
+                      value={values.submittedNumber}
                       onChange={handleChange}
                       id="input"
                       placeholder="Type Board Size"
